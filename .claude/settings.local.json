@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -X POST http://localhost:3001/api/auth/signin -H \"Content-Type: application/json\" -d \"{\\\\\"username\\\\\":\\\\\"testuser\\\\\",\\\\\"password\\\\\":\\\\\"testpass\\\\\"}\")",
+      "Bash(curl -s -X POST http://localhost:3001/api/scores -H \"Content-Type: application/json\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTc3OTg4NjM1MCwiZXhwIjoxNzgwNDkxMTUwfQ.CfOnuAJSR_RY4QRLhC4EpkfVqM6casiNXWyU4rTdfhw\" -d \"{\\\\\"score\\\\\":100}\")",
+      "Bash(curl -s \"http://localhost:3001/api/scores\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTc3OTg4NjM1MCwiZXhwIjoxNzgwNDkxMTUwfQ.CfOnuAJSR_RY4QRLhC4EpkfVqM6casiNXWyU4rTdfhw\")",
+      "Bash(vercel *)",
+      "PowerShell(vercel *)",
+      "PowerShell(gh *)",
+      "PowerShell(git *)"
+    ]
+  }
+}
